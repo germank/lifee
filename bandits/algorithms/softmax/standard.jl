@@ -1,4 +1,4 @@
-struct Softmax <: BanditAlgorithm
+mutable struct Softmax <: BanditAlgorithm
   temperature::Float64
   counts::Vector{Int64}
   values::Vector{Float64}

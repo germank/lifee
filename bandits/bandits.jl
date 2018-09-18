@@ -3,7 +3,7 @@ module Bandits
 using Distributions
 
 export BernoulliArm, NormalArm, AdversarialArm
-export EpsilonGreedy, AnnealingEpsilonGreedy, Softmax, UCB, Life
+export EpsilonGreedy, AnnealingEpsilonGreedy, Softmax, UCB, Life, AnnealingSoftmax
 export initialize, draw, select_arm, update, n_arms, arms
 export TwoSeasonalArms, FiveConstantArms, FiveDriftingArms, FiveNearUniformArms, FiveStepFunctionArms
 

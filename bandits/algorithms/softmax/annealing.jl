@@ -1,4 +1,4 @@
-struct AnnealingSoftmax <: BanditAlgorithm
+mutable struct AnnealingSoftmax <: BanditAlgorithm
   counts::Vector{Int64}
   values::Vector{Float64}
 end
@@ -19,8 +19,8 @@ end
 function select_arm(algo::AnnealingSoftmax)
   t = sum(algo.counts) + 1
   temperature = 1 / log(t + eps(1.0))
-  z = sum(exp(algo.values ./ temperature))
-  probs = exp(algo.values ./ temperature) ./ z
+  z = sum(exp.(algo.values ./ temperature))
+  probs = exp.(algo.values ./ temperature) ./ z
   return rand(Categorical(probs))
 end
 
