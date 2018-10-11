@@ -1,10 +1,9 @@
-__precompile__()
 module Bandits
 using Distributions
 
 export BernoulliArm, NormalArm, AdversarialArm
 export EpsilonGreedy, AnnealingEpsilonGreedy, Softmax, UCB, Life, AnnealingSoftmax
-export initialize, draw, select_arm, update, n_arms, arms
+export initialize, draw, select_arm, update, n_arms, arms, expectation
 export TwoSeasonalArms, FiveConstantArms, FiveDriftingArms, FiveNearUniformArms, FiveStepFunctionArms
 
 function ind_max(x)

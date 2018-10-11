@@ -1,0 +1,9 @@
+name = "Bandits"
+uuid = "dee76970-c7ba-11e8-13b5-bb6223d6f2f5"
+authors = ["Germán Kruszewski <germank@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
